@@ -18,24 +18,26 @@
         <TextField fx:id="downPaymentText" layoutX="139.0" layoutY="98.0" onKeyReleased="#onKeyTypeDP" prefWidth="139.0" style="-fx-background-color: #676565;&#10;-fx-text-inner-color: white;" text="" />
         <TextField fx:id="interestRateLabel" alignment="CENTER" editable="false" layoutX="25.0" layoutY="138.0" onMouseDragged="#deselect" onMouseReleased="#deselect" prefWidth="100.0" style="-fx-background-color: #474444;&#10;-fx-text-inner-color: white;" text="Interest Rate" />
         <TextField fx:id="interestRateText" layoutX="139.0" layoutY="138.0" onKeyReleased="#onKeyTypeIR" prefWidth="139.0" style="-fx-background-color: #676565;&#10;-fx-text-inner-color: white;" text="" />
-        <Slider fx:id="slider" blendMode="HARD_LIGHT" layoutX="335.0" layoutY="102.0" majorTickUnit="100.0" min="1.0" minorTickCount="1" onMouseDragged="#onSliderDrag" prefWidth="216.0" showTickLabels="true" showTickMarks="true" snapToTicks="false" style="" />
-        <TextField fx:id="yearLabel" editable="false" layoutX="335.0" layoutY="62.0" onMouseDragged="#deselect" prefHeight="30.000099999997474" prefWidth="108.99997792968497" style="-fx-background-color: #474444;&#10;-fx-text-inner-color: white;&#10;-fx-font-size: 13" text="Select year:" />
-        <Pane layoutX="25.0" layoutY="186.0" prefHeight="200.0" prefWidth="548.0" style="-fx-background-color: #474444;">
+        <Slider fx:id="slider" blendMode="HARD_LIGHT" layoutX="334.0" layoutY="98.0" majorTickUnit="99.0" min="1.0" minorTickCount="0" onMouseDragged="#onSliderDrag" prefHeight="14.9609375" prefWidth="216.0" showTickLabels="true" showTickMarks="true" snapToTicks="false" style="" />
+        <TextField fx:id="yearLabel" editable="false" layoutX="334.0" layoutY="59.0" onMouseDragged="#deselect" prefHeight="21.9609459472631" prefWidth="108.99997792968497" style="-fx-background-color: #474444;&#10;-fx-text-inner-color: white;" text="Select year:" />
+        <Pane layoutX="25.0" layoutY="201.0" prefHeight="200.0" prefWidth="548.0" style="-fx-background-color: #474444;">
           <children>
-            <TextField fx:id="displayLabel1" editable="false" layoutX="28.0" layoutY="14.0" onMouseDragged="#deselect" prefWidth="200.0" style="-fx-background-color: #676565;&#10;-fx-text-inner-color: white;" text="Loan amount:" />
-            <TextField fx:id="displayAnswer1" editable="false" layoutX="28.0" layoutY="36.0" onMouseDragged="#deselect" prefWidth="200.0" style="-fx-background-color: #676565;&#10;-fx-text-inner-color: white;" />
-            <TextField fx:id="displayLabel2" editable="false" layoutX="28.0" layoutY="72.0" onMouseDragged="#deselect" prefWidth="200.0" style="-fx-background-color: #676565;&#10;-fx-text-inner-color: white;" text="Monthly payment in 10 years:" />
-            <TextField fx:id="displayAnswer2" editable="false" layoutX="28.0" layoutY="94.0" onMouseDragged="#deselect" prefWidth="200.0" style="-fx-background-color: #676565;&#10;-fx-text-inner-color: white;" />
-            <TextField fx:id="displayLabel3" editable="false" layoutX="28.0" layoutY="129.0" onMouseDragged="#deselect" prefWidth="200.0" style="-fx-background-color: #676565;&#10;-fx-text-inner-color: white;" text="Monthly payment in 30 years:" />
-            <TextField fx:id="displayAnswer3" editable="false" layoutX="28.0" layoutY="151.0" onMouseDragged="#deselect" prefWidth="200.0" style="-fx-background-color: #676565;&#10;-fx-text-inner-color: white;" />
-            <TextField fx:id="displayLabel4" editable="false" layoutX="317.0" layoutY="14.0" onMouseDragged="#deselect" prefWidth="200.0" style="-fx-background-color: #676565;&#10;-fx-text-inner-color: white;" />
-            <TextField fx:id="displayAnswer4" editable="false" layoutX="317.0" layoutY="36.0" onMouseDragged="#deselect" prefWidth="200.0" style="-fx-background-color: #676565;&#10;-fx-text-inner-color: white;" />
-            <TextField fx:id="displayLabel5" editable="false" layoutX="317.0" layoutY="72.0" onMouseDragged="#deselect" prefWidth="200.0" style="-fx-background-color: #676565;&#10;-fx-text-inner-color: white;" text="Monthly payment in 20 years:" />
-            <TextField fx:id="displayAnswer5" editable="false" layoutX="317.0" layoutY="94.0" onMouseDragged="#deselect" prefWidth="200.0" style="-fx-background-color: #676565;&#10;-fx-text-inner-color: white;" />
-            <TextField fx:id="displayAnswer6" editable="false" layoutX="317.0" layoutY="151.0" onMouseDragged="#deselect" prefWidth="200.0" style="-fx-background-color: #676565;&#10;-fx-text-inner-color: white;" />
-            <TextField fx:id="displayLabel6" editable="false" layoutX="317.0" layoutY="129.0" onMouseDragged="#deselect" prefWidth="200.0" style="-fx-background-color: #676565;&#10;-fx-text-inner-color: white;" text="Monthly payment in 40 years:" />
+            <TextField fx:id="displayLabel1" editable="false" layoutX="14.0" layoutY="14.0" onMouseDragged="#deselect" prefWidth="216.0" style="-fx-background-color: #676565;&#10;-fx-text-inner-color: white;" text="Loan amount:" />
+            <TextField fx:id="displayAnswer1" editable="false" layoutX="14.0" layoutY="36.0" onMouseDragged="#deselect" prefWidth="216.0" style="-fx-background-color: #676565;&#10;-fx-text-inner-color: white;" />
+            <TextField fx:id="displayLabel2" editable="false" layoutX="14.0" layoutY="72.0" onMouseDragged="#deselect" prefWidth="216.0" style="-fx-background-color: #676565;&#10;-fx-text-inner-color: white;" text="Monthly payment in 10 years:" />
+            <TextField fx:id="displayAnswer2" editable="false" layoutX="14.0" layoutY="94.0" onMouseDragged="#deselect" prefWidth="216.0" style="-fx-background-color: #676565;&#10;-fx-text-inner-color: white;" />
+            <TextField fx:id="displayLabel3" editable="false" layoutX="14.0" layoutY="129.0" onMouseDragged="#deselect" prefWidth="216.0" style="-fx-background-color: #676565;&#10;-fx-text-inner-color: white;" text="Monthly payment in 30 years:" />
+            <TextField fx:id="displayAnswer3" editable="false" layoutX="14.0" layoutY="151.0" onMouseDragged="#deselect" prefWidth="216.0" style="-fx-background-color: #676565;&#10;-fx-text-inner-color: white;" />
+            <TextField fx:id="displayLabel4" editable="false" layoutX="307.0" layoutY="14.0" onMouseDragged="#deselect" prefHeight="21.9609375" prefWidth="223.0001220703125" style="-fx-background-color: #676565;&#10;-fx-text-inner-color: white;" />
+            <TextField fx:id="displayAnswer4" editable="false" layoutX="307.0" layoutY="36.0" onMouseDragged="#deselect" prefWidth="223.0001220703125" style="-fx-background-color: #676565;&#10;-fx-text-inner-color: white;" />
+            <TextField fx:id="displayLabel5" editable="false" layoutX="307.0" layoutY="72.0" onMouseDragged="#deselect" prefWidth="223.0001220703125" style="-fx-background-color: #676565;&#10;-fx-text-inner-color: white;" text="Monthly payment in 20 years:" />
+            <TextField fx:id="displayAnswer5" editable="false" layoutX="307.0" layoutY="94.0" onMouseDragged="#deselect" prefWidth="223.0001220703125" style="-fx-background-color: #676565;&#10;-fx-text-inner-color: white;" />
+            <TextField fx:id="displayAnswer6" editable="false" layoutX="307.0" layoutY="151.0" onMouseDragged="#deselect" prefWidth="223.0001220703125" style="-fx-background-color: #676565;&#10;-fx-text-inner-color: white;" />
+            <TextField fx:id="displayLabel6" editable="false" layoutX="307.0" layoutY="129.0" onMouseDragged="#deselect" prefWidth="223.00009999999747" style="-fx-background-color: #676565;&#10;-fx-text-inner-color: white;" text="Monthly payment in 40 years:" />
           </children>
         </Pane>
+        <TextField fx:id="monthLabel" editable="false" layoutX="334.0" layoutY="127.0" onMouseDragged="#deselect" prefHeight="21.9609459472631" prefWidth="109.00007792968245" style="-fx-background-color: #474444;&#10;-fx-text-inner-color: white;" text="Select month:" />
+        <Slider id="slider" fx:id="slider2" blendMode="HARD_LIGHT" blockIncrement="10.0" layoutX="334.0" layoutY="168.0" majorTickUnit="11.0" max="12.0" min="1.0" minorTickCount="0" onMouseDragged="#onSliderDrag" prefHeight="14.9609375" prefWidth="216.0" showTickLabels="true" showTickMarks="true" snapToTicks="false" style="" />
       </children>
     </Pane>
   </children>

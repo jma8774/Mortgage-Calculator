@@ -26,7 +26,11 @@ public class Controller {
     @FXML
     private TextField yearLabel;
     @FXML
+    private TextField monthLabel;
+    @FXML
     private Slider slider;
+    @FXML
+    private Slider slider2;
     @FXML
     private TextField displayLabel1;
     @FXML
@@ -84,8 +88,9 @@ public class Controller {
 
         year = (int) slider.getValue();
         yearLabel.setText("Select year: " + year);
-        month = year * 12;
-        displayLabel4.setText("Monthly payment in " + year + " years: ");
+        month = (year * 12) + (int) slider2.getValue();
+        monthLabel.setText("Select month: " + (int) slider2.getValue());
+        displayLabel4.setText("Monthly payment in " + year + " years " + (int) (slider2.getValue()) + " months: ");
 
         changeDisplayAnswers();
     }
@@ -140,9 +145,10 @@ public class Controller {
     @FXML
     public void onSliderDrag() {
         year = (int) slider.getValue();
-        month = year * 12;
         yearLabel.setText("Select year: " + year);
-        displayLabel4.setText("Monthly payment in " + year + " years:");
+        month = (year * 12) + (int) slider2.getValue();
+        monthLabel.setText("Select month: " + (int) slider2.getValue());
+        displayLabel4.setText("Monthly payment in " + year + " years " + (int) (slider2.getValue()) + " months: ");
         displayAnswer4.setText(Double.toString(loanAmount / ((Math.pow((1+interestRateMonth),month)-1) / (interestRateMonth*Math.pow(1+interestRateMonth, month)))));
     }
 
