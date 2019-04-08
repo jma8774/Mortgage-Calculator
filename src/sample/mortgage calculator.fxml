@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="sample.Controller">
+  <children>
+    <Pane fx:id="backgroundPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #2b2727;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <TextField fx:id="titleLabel" alignment="CENTER" editable="false" layoutX="188.0" layoutY="14.0" onMouseDragged="#deselect" prefHeight="30.0000084472631" prefWidth="223.00009999999747" style="-fx-background-color: #474444;&#10;-fx-text-inner-color: white;&#10;-fx-font-size: 15" text="Mortgage Calculator" />
+        <TextField fx:id="purchasePriceLabel" alignment="CENTER" editable="false" layoutX="25.0" layoutY="59.0" onMouseDragged="#deselect" onMouseReleased="#deselect" prefWidth="100.0" style="-fx-background-color: #474444;&#10;-fx-text-inner-color: white;" text="Purchase Price" />
+        <TextField fx:id="purchasePriceText" layoutX="139.0" layoutY="59.0" onKeyReleased="#onKeyTypePP" prefWidth="139.0" style="-fx-background-color: #676565;&#10;-fx-text-inner-color: white;" text="" />
+        <TextField fx:id="downPaymentLabel" alignment="CENTER" editable="false" layoutX="25.0" layoutY="98.0" onMouseDragged="#deselect" onMouseReleased="#deselect" prefWidth="100.0" style="-fx-background-color: #474444;&#10;-fx-text-inner-color: white;" text="Down Payment" />
+        <TextField fx:id="downPaymentText" layoutX="139.0" layoutY="98.0" onKeyReleased="#onKeyTypeDP" prefWidth="139.0" style="-fx-background-color: #676565;&#10;-fx-text-inner-color: white;" text="" />
+        <TextField fx:id="interestRateLabel" alignment="CENTER" editable="false" layoutX="25.0" layoutY="138.0" onMouseDragged="#deselect" onMouseReleased="#deselect" prefWidth="100.0" style="-fx-background-color: #474444;&#10;-fx-text-inner-color: white;" text="Interest Rate" />
+        <TextField fx:id="interestRateText" layoutX="139.0" layoutY="138.0" onKeyReleased="#onKeyTypeIR" prefWidth="139.0" style="-fx-background-color: #676565;&#10;-fx-text-inner-color: white;" text="" />
+        <Slider fx:id="slider" blendMode="HARD_LIGHT" layoutX="335.0" layoutY="102.0" majorTickUnit="100.0" min="1.0" minorTickCount="1" onMouseDragged="#onSliderDrag" prefWidth="216.0" showTickLabels="true" showTickMarks="true" snapToTicks="false" style="" />
+        <TextField fx:id="yearLabel" editable="false" layoutX="335.0" layoutY="62.0" onMouseDragged="#deselect" prefHeight="30.000099999997474" prefWidth="108.99997792968497" style="-fx-background-color: #474444;&#10;-fx-text-inner-color: white;&#10;-fx-font-size: 13" text="Select year:" />
+        <Pane layoutX="25.0" layoutY="186.0" prefHeight="200.0" prefWidth="548.0" style="-fx-background-color: #474444;">
+          <children>
+            <TextField fx:id="displayLabel1" editable="false" layoutX="28.0" layoutY="14.0" onMouseDragged="#deselect" prefWidth="200.0" style="-fx-background-color: #676565;&#10;-fx-text-inner-color: white;" text="Loan amount:" />
+            <TextField fx:id="displayAnswer1" editable="false" layoutX="28.0" layoutY="36.0" onMouseDragged="#deselect" prefWidth="200.0" style="-fx-background-color: #676565;&#10;-fx-text-inner-color: white;" />
+            <TextField fx:id="displayLabel2" editable="false" layoutX="28.0" layoutY="72.0" onMouseDragged="#deselect" prefWidth="200.0" style="-fx-background-color: #676565;&#10;-fx-text-inner-color: white;" text="Monthly payment in 10 years:" />
+            <TextField fx:id="displayAnswer2" editable="false" layoutX="28.0" layoutY="94.0" onMouseDragged="#deselect" prefWidth="200.0" style="-fx-background-color: #676565;&#10;-fx-text-inner-color: white;" />
+            <TextField fx:id="displayLabel3" editable="false" layoutX="28.0" layoutY="129.0" onMouseDragged="#deselect" prefWidth="200.0" style="-fx-background-color: #676565;&#10;-fx-text-inner-color: white;" text="Monthly payment in 30 years:" />
+            <TextField fx:id="displayAnswer3" editable="false" layoutX="28.0" layoutY="151.0" onMouseDragged="#deselect" prefWidth="200.0" style="-fx-background-color: #676565;&#10;-fx-text-inner-color: white;" />
+            <TextField fx:id="displayLabel4" editable="false" layoutX="317.0" layoutY="14.0" onMouseDragged="#deselect" prefWidth="200.0" style="-fx-background-color: #676565;&#10;-fx-text-inner-color: white;" />
+            <TextField fx:id="displayAnswer4" editable="false" layoutX="317.0" layoutY="36.0" onMouseDragged="#deselect" prefWidth="200.0" style="-fx-background-color: #676565;&#10;-fx-text-inner-color: white;" />
+            <TextField fx:id="displayLabel5" editable="false" layoutX="317.0" layoutY="72.0" onMouseDragged="#deselect" prefWidth="200.0" style="-fx-background-color: #676565;&#10;-fx-text-inner-color: white;" text="Monthly payment in 20 years:" />
+            <TextField fx:id="displayAnswer5" editable="false" layoutX="317.0" layoutY="94.0" onMouseDragged="#deselect" prefWidth="200.0" style="-fx-background-color: #676565;&#10;-fx-text-inner-color: white;" />
+            <TextField fx:id="displayAnswer6" editable="false" layoutX="317.0" layoutY="151.0" onMouseDragged="#deselect" prefWidth="200.0" style="-fx-background-color: #676565;&#10;-fx-text-inner-color: white;" />
+            <TextField fx:id="displayLabel6" editable="false" layoutX="317.0" layoutY="129.0" onMouseDragged="#deselect" prefWidth="200.0" style="-fx-background-color: #676565;&#10;-fx-text-inner-color: white;" text="Monthly payment in 40 years:" />
+          </children>
+        </Pane>
+      </children>
+    </Pane>
+  </children>
+</AnchorPane>
