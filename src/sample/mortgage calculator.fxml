@@ -18,7 +18,7 @@
         <TextField fx:id="downPaymentText" layoutX="139.0" layoutY="98.0" onKeyReleased="#onKeyTypeDP" prefWidth="139.0" style="-fx-background-color: #676565;&#10;-fx-text-inner-color: white;" text="" />
         <TextField fx:id="interestRateLabel" alignment="CENTER" editable="false" layoutX="25.0" layoutY="138.0" onMouseDragged="#deselect" onMouseReleased="#deselect" prefWidth="100.0" style="-fx-background-color: #474444;&#10;-fx-text-inner-color: white;" text="Interest Rate" />
         <TextField fx:id="interestRateText" layoutX="139.0" layoutY="138.0" onKeyReleased="#onKeyTypeIR" prefWidth="139.0" style="-fx-background-color: #676565;&#10;-fx-text-inner-color: white;" text="" />
-        <Slider fx:id="slider" blendMode="HARD_LIGHT" layoutX="334.0" layoutY="98.0" majorTickUnit="99.0" min="1.0" minorTickCount="0" onMouseDragged="#onSliderDrag" prefHeight="14.9609375" prefWidth="216.0" showTickLabels="true" showTickMarks="true" snapToTicks="false" style="" />
+        <Slider fx:id="slider" blendMode="HARD_LIGHT" layoutX="334.0" layoutY="98.0" majorTickUnit="99.0" min="1.0" minorTickCount="0" onMouseClicked="#onSliderDrag" onMouseDragged="#onSliderDrag" prefHeight="14.9609375" prefWidth="216.0" showTickLabels="true" showTickMarks="true" snapToTicks="false" style="" />
         <TextField fx:id="yearLabel" editable="false" layoutX="334.0" layoutY="59.0" onMouseDragged="#deselect" prefHeight="21.9609459472631" prefWidth="108.99997792968497" style="-fx-background-color: #474444;&#10;-fx-text-inner-color: white;" text="Select year:" />
         <Pane layoutX="25.0" layoutY="201.0" prefHeight="200.0" prefWidth="548.0" style="-fx-background-color: #474444;">
           <children>
@@ -37,7 +37,7 @@
           </children>
         </Pane>
         <TextField fx:id="monthLabel" editable="false" layoutX="334.0" layoutY="127.0" onMouseDragged="#deselect" prefHeight="21.9609459472631" prefWidth="109.00007792968245" style="-fx-background-color: #474444;&#10;-fx-text-inner-color: white;" text="Select month:" />
-        <Slider id="slider" fx:id="slider2" blendMode="HARD_LIGHT" blockIncrement="10.0" layoutX="334.0" layoutY="168.0" majorTickUnit="11.0" max="12.0" min="1.0" minorTickCount="0" onMouseDragged="#onSliderDrag" prefHeight="14.9609375" prefWidth="216.0" showTickLabels="true" showTickMarks="true" snapToTicks="false" style="" />
+        <Slider id="slider" fx:id="slider2" blendMode="HARD_LIGHT" blockIncrement="10.0" layoutX="334.0" layoutY="168.0" majorTickUnit="11.0" max="12.0" min="1.0" minorTickCount="0" onMouseClicked="#onSliderDrag" onMouseDragged="#onSliderDrag" prefHeight="14.9609375" prefWidth="216.0" showTickLabels="true" showTickMarks="true" snapToTicks="false" style="" />
       </children>
     </Pane>
   </children>
