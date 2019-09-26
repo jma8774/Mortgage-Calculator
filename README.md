@@ -1,5 +1,5 @@
 # Mortgage-Calculator
-Used to calculate monthly payments based on how long you want to take to pay back the loan. <br/>
+> Used to calculate monthly payments based on how long you want to take to pay back the loan. <br/>
 </br>
 Click to watch the video!
 </br>
